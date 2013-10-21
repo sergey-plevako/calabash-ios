@@ -72,7 +72,7 @@ module Calabash
           known = KEYPLANE_NAMES.values
 
           found = false
-          ["shift", "more"].each do |key|
+          ["shift", "more", "international"].each do |key|
             plane = props["#{key}-alternate"]
             if (known.member?(plane) and
                 not visited.member?(plane))
